@@ -1,0 +1,94 @@
+/* Main app background */
+QWidget {
+    background-color: #6096B4;
+    color: white;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+/* Specific background for LoginScreen */
+QWidget#LoginScreen {
+    background-color: #6096B4;
+}
+
+/* Logo (if you want a background) */
+QLabel#logoLabel {
+    background: transparent;
+    border-radius: 55px;
+}
+
+/* Title and labels */
+QLabel#titleLabel {
+    color: #78A083;
+    font-weight: bold;
+    font-size: 32px;
+    letter-spacing: 1.5px;
+    background: transparent;
+}
+
+/* Underline accent */
+QLabel#underline {
+    background: qlineargradient(x1:0, x2:1, stop:0 #78A083, stop:1 #50727B);
+    border-radius: 2px;
+    min-height: 3px;
+    max-height: 3px;
+}
+
+/* QLineEdit styling */
+QLineEdit {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #35374B, stop:1 #344955);
+    color: white;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 12px;
+    font-size: 18px;
+    border: 2px solid #78A083;
+    selection-background-color: #78A083;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
+QLineEdit:focus {
+    border: 2px solid #6096B4;
+    background: #42577A;
+}
+
+/* QPushButton styling */
+QPushButton {
+    background: qlineargradient(x1:0, x2:1, stop:0 #78A083, stop:1 #50727B);
+    color: white;
+    border-radius: 12px;
+    font-size: 19px;
+    font-weight: 700;
+    border: none;
+    letter-spacing: 1px;
+    padding-left: 18px;
+    padding-right: 18px;
+    margin-top: 10px;
+    min-height: 40px;
+}
+QPushButton:hover {
+    background: qlineargradient(x1:0, x2:1, stop:0 #50727B, stop:1 #78A083);
+    color: #23242A;
+}
+QPushButton:pressed {
+    background: #50727B;
+    color: white;
+}
+
+/* Error or info labels */
+QLabel#msgLabel {
+    font-size: 15px;
+    font-weight: 500;
+    color: #FF6666;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    min-height: 20px;
+}
+
+/* Footer */
+QLabel#footerLabel {
+    font-size: 12px;
+    color: #A5C9CA;
+    margin-top: 16px;
+    letter-spacing: 0.5px;
+    background: transparent;
+}
